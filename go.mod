@@ -1,6 +1,6 @@
-module github.com/masterzen/winrm-cli
+module github.com/fjacquet/winrm-cli
 
-go 1.22.5
+go 1.23.4
 
 require (
 	github.com/masterzen/winrm v0.0.0-20240702205601-3fad6e106085
@@ -27,8 +27,8 @@ require (
 	github.com/kr/text v0.1.0 // indirect
 	github.com/masterzen/simplexml v0.0.0-20190410153822-31eea3082786 // indirect
 	github.com/tidwall/transform v0.0.0-20201103190739-32f242e2dbde // indirect
-	golang.org/x/crypto v0.24.0 // indirect
-	golang.org/x/net v0.21.0 // indirect
-	golang.org/x/sys v0.21.0 // indirect
-	golang.org/x/text v0.16.0 // indirect
+	golang.org/x/crypto v0.31.0 // indirect
+	golang.org/x/net v0.33.0 // indirect
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 )
