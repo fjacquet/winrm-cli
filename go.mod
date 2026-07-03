@@ -1,6 +1,6 @@
 module github.com/fjacquet/winrm-cli
 
-go 1.23.4
+go 1.26.4
 
 require (
 	github.com/masterzen/winrm v0.0.0-20240702205601-3fad6e106085
