@@ -1,4 +1,4 @@
-FROM golang:alpine AS builder
+FROM docker.io/library/golang:alpine AS builder
 
 RUN apk add --no-cache git openssh-client
 ADD . /go/src/github.com/masterzen/winrm-cli
