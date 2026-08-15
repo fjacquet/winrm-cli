@@ -20,7 +20,9 @@ type WinRMCliSuite struct{}
 
 var _ = Suite(&WinRMCliSuite{})
 
-var rsaByteSizes = []int{512, 1024, 2048, 4096}
+// 512-bit RSA is omitted: since Go 1.24, crypto/rsa.GenerateKey rejects keys
+// smaller than 1024 bits (GODEBUG rsa1024min, enabled by the go directive).
+var rsaByteSizes = []int{1024, 2048, 4096}
 
 func (s *WinRMCliSuite) TestNewCertRSASize(c *C) {
 	for _, size := range rsaByteSizes {
